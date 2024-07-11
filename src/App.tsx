@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Header } from "antd/es/layout/layout";
+import { Button } from "antd";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <Header
+        style={{
+          backgroundColor: "white",
+          display: "flex",
+          justifyContent: "space-around",
+          alignItems: "center",
+        }}
+      >
+        <img
+          src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
+          style={{ height: "27px" }}
+        ></img>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+            alignItems: "center",
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          <div>Search Bar</div>
+          <Button>Log in</Button>
+          <Button>Sign in</Button>
+        </div>
+      </Header>
     </div>
   );
 }
