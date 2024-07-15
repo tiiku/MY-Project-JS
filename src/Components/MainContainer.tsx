@@ -1,7 +1,7 @@
 import { Breadcrumb, Layout, Tabs, Typography } from "antd";
 const { Content } = Layout;
 const { Title } = Typography;
-const onChange = (key) => {
+const onChange = (key: any) => {
   console.log(key);
 };
 const items = [
@@ -30,6 +30,7 @@ const items = [
         >
           <img
             src="https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png"
+            alt="dining out"
             style={{ height: "30px", width: "30px" }}
           />
         </div>
@@ -66,6 +67,7 @@ const items = [
         >
           <img
             src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png"
+            alt="delivery"
             style={{ height: "30px", width: "30px" }}
           />
         </div>
@@ -81,12 +83,11 @@ const items = [
 const MainContainer = () => {
   return (
     <>
-      <Layout></Layout>
       <Content
         style={{
           margin: "0 360px",
           padding: "8px 0px",
-          height: "100vh",
+          height: "auto",
         }}
       >
         <Breadcrumb
@@ -110,7 +111,7 @@ const MainContainer = () => {
           defaultActiveKey="1"
           items={items}
           onChange={onChange}
-          titleFontSize={"20px"}
+          // titleFontSize={"20px"}
           size={"small"}
         />
       </Content>
