@@ -1,4 +1,5 @@
 import { Breadcrumb, Layout, Tabs, Typography } from "antd";
+import DeliveryTab from "../pages/deliveryTab";
 const { Content } = Layout;
 const { Title } = Typography;
 const onChange = (key: any) => {
@@ -77,7 +78,7 @@ const items = [
         </Title>
       </div>
     ),
-    children: "Content of Tab Pane 2",
+    children: <DeliveryTab />,
   },
 ];
 const MainContainer = () => {
