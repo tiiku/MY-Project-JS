@@ -1,9 +1,9 @@
-// import axios from "axios";
+import axios from "axios";
 
-// export const axiosInstance = axios.create({
-//   baseURL: process.env.API_URL,
-//   headers: {
-//     "Content-Type": "application/json",
-//     allowedHeaders: ["Content-Type"],
-//   },
-// });
+export const axiosInstance = axios.create({
+  baseURL: process.env.API_URL,
+  headers: {
+    "Content-Type": "application/json",
+    allowedHeaders: ["Content-Type"],
+  },
+});

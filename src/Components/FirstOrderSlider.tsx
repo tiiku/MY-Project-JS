@@ -48,6 +48,7 @@ const FirstOrderSlider = () => {
     },
   ];
   const [product, setProduct] = useState(data);
+  console.log("setProduct", setProduct);
   return (
     <Swiper
       modules={[Navigation]}
@@ -70,6 +71,7 @@ const FirstOrderSlider = () => {
               >
                 <img
                   src={products.productImg}
+                  alt={products.productName}
                   style={{
                     height: "150px",
                     width: "150px",
