@@ -1,5 +1,6 @@
 import { Button, Flex } from "antd";
 import { Content } from "antd/es/layout/layout";
+import FirstOrderSlider from "../Components/FirstOrderSlider";
 
 const DeliveryTab = () => {
   return (
@@ -17,7 +18,10 @@ const DeliveryTab = () => {
           width: "100%",
         }}
       >
-        <h3> Inspiration for your first order</h3>
+        <h1 style={{ marginBottom: "32px" }}>
+          Inspiration for your first order
+        </h1>
+        <FirstOrderSlider />
       </Content>
       {/* <div style={{ padding: "8px 0px" }}>
       </div> */}
