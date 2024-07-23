@@ -2,7 +2,7 @@ import { axiosInstance } from "../axios";
 
 export const getProducts = async () => {
   try {
-    const products = await axiosInstance("/get/all/products");
+    const products = await axiosInstance("/get/products");
     return products.data;
   } catch (error) {
     return error;

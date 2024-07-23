@@ -12,3 +12,11 @@
 button {
   margin: 10px;
 }
+
+.filterButton {
+  margin: 10px 14px 10px 0px;
+}
+
+.ant-tabs-nav {
+  margin: 0px;
+}

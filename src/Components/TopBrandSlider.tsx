@@ -9,7 +9,7 @@ const TopBrandSlider = () => {
   useEffect(() => {
     getBrands()
       .then((res) => {
-        setBrands(res.brand);
+        setBrands(res.brands);
       })
       .catch((e) => {
         console.log("er", e);

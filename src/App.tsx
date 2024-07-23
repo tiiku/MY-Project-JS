@@ -46,7 +46,7 @@ function App() {
           justifyContent: "space-between",
           alignItems: "center",
           padding: "0px",
-          margin: "0 360px",
+          margin: "0 400px",
         }}
       >
         <div style={{ display: "flex", alignItems: "center" }}>

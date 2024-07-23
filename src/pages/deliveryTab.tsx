@@ -6,11 +6,11 @@ import TopBrandSlider from "../Components/TopBrandSlider";
 const DeliveryTab = () => {
   return (
     <>
-      <Flex align="center" justify="flex-start">
-        <Button>filter</Button>
-        <Button>Rating</Button>
-        <Button>Pure Veg</Button>
-        <Button>Cuisines</Button>
+      <Flex align="center" justify="flex-start" style={{ padding: "16px 0px" }}>
+        <Button className="filterButton" >filter</Button>
+        <Button className="filterButton">Rating</Button>
+        <Button className="filterButton">Pure Veg</Button>
+        <Button className="filterButton">Cuisines</Button>
       </Flex>
       <Content
         style={{

@@ -86,7 +86,7 @@ const MainContainer = () => {
     <>
       <Content
         style={{
-          margin: "0 360px",
+          margin: "0 400px",
           padding: "8px 0px",
           height: "auto",
         }}
@@ -109,7 +109,7 @@ const MainContainer = () => {
           ]}
         />
         <Tabs
-          defaultActiveKey="1"
+          defaultActiveKey="2"
           items={items}
           onChange={onChange}
           // titleFontSize={"20px"}
