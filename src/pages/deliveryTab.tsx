@@ -7,7 +7,17 @@ import RestaurantsCards from "../Components/RestaurantsCards";
 const DeliveryTab = () => {
   return (
     <>
-      <Flex align="center" justify="flex-start" style={{ padding: "16px 0px" }}>
+      <Flex
+        align="center"
+        justify="flex-start"
+        style={{
+          padding: "16px 0px",
+          position: "sticky",
+          top: "0px",
+          backgroundColor: "#FFFFFF",
+          zIndex: "10",
+        }}
+      >
         <Button className="filterButton">filter</Button>
         <Button className="filterButton">Rating</Button>
         <Button className="filterButton">Pure Veg</Button>
