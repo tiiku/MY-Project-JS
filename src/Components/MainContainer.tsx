@@ -1,4 +1,4 @@
-import { Breadcrumb, Layout, Tabs, Typography } from "antd";
+import { Layout, Tabs, Typography } from "antd";
 import DeliveryTab from "../pages/deliveryTab";
 const { Content } = Layout;
 const { Title } = Typography;
@@ -86,34 +86,19 @@ const MainContainer = () => {
     <>
       <Content
         style={{
-          margin: "0 400px",
-          padding: "8px 0px",
           height: "auto",
         }}
       >
-        <Breadcrumb
-          style={{ fontSize: "12px" }}
-          items={[
-            {
-              title: <a href="/#">Home</a>,
-            },
-            {
-              title: <a href="/#">India</a>,
-            },
-            {
-              title: <a href="/#">Surat</a>,
-            },
-            {
-              title: <a href="/#">Vesu Restaurants</a>,
-            },
-          ]}
-        />
         <Tabs
           defaultActiveKey="2"
           items={items}
           onChange={onChange}
           // titleFontSize={"20px"}
           size={"small"}
+          tabBarStyle={{
+            margin: "0 400px",
+          }}
+          tabBarGutter={0}
         />
       </Content>
     </>

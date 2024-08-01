@@ -1,5 +1,5 @@
 import { Header } from "antd/es/layout/layout";
-import { Button, Dropdown, MenuProps, Space } from "antd";
+import { Breadcrumb, Button, Dropdown, MenuProps, Space } from "antd";
 import MainContainer from "./Components/MainContainer";
 import LocationIcon from "./Components/LocationIcon";
 import { CaretDownOutlined } from "@ant-design/icons";
@@ -89,6 +89,28 @@ function App() {
           <Button>Sign in</Button>
         </div>
       </Header>
+      <Breadcrumb
+        style={{
+          margin: "10px 400px",
+          // padding: "8px 0px",
+          height: "auto",
+          fontSize: "12px",
+        }}
+        items={[
+          {
+            title: <a href="/#">Home</a>,
+          },
+          {
+            title: <a href="/#">India</a>,
+          },
+          {
+            title: <a href="/#">Surat</a>,
+          },
+          {
+            title: <a href="/#">Vesu Restaurants</a>,
+          },
+        ]}
+      />
       <MainContainer />
     </div>
   );

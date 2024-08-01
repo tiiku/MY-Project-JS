@@ -20,3 +20,12 @@ button {
 .ant-tabs-nav {
   margin: 0px;
 }
+
+.ant-tag {
+  margin: 0px;
+}
+
+.ant-tabs-ink-bar {
+  height: 0.2rem;
+  background: #ff7e8b !important;
+}

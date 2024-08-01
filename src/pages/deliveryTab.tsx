@@ -16,12 +16,15 @@ const DeliveryTab = () => {
           top: "0px",
           backgroundColor: "#FFFFFF",
           zIndex: "10",
+          height: "57px",
         }}
       >
-        <Button className="filterButton">filter</Button>
-        <Button className="filterButton">Rating</Button>
-        <Button className="filterButton">Pure Veg</Button>
-        <Button className="filterButton">Cuisines</Button>
+        <div style={{ margin: "0 400px" }}>
+          <Button className="filterButton">filter</Button>
+          <Button className="filterButton">Rating</Button>
+          <Button className="filterButton">Pure Veg</Button>
+          <Button className="filterButton">Cuisines</Button>
+        </div>
       </Flex>
       <Content
         style={{
@@ -29,22 +32,27 @@ const DeliveryTab = () => {
           backgroundColor: "#F8F8F8",
         }}
       >
-        <h1 style={{ marginBottom: "32px" }}>
-          Inspiration for your first order
-        </h1>
-        <FirstOrderSlider />
+        <div style={{ margin: "0 400px" }}>
+          <h1 style={{ marginBottom: "32px" }}>
+            Inspiration for your first order
+          </h1>
+          <FirstOrderSlider />
+        </div>
       </Content>
       <Content
         style={{
           padding: "40px 0px",
         }}
       >
-        <h1 style={{ marginBottom: "32px" }}>Top brands for you</h1>
-        <TopBrandSlider />
+        <div style={{ margin: "0 400px" }}>
+          <h1 style={{ marginBottom: "32px" }}>Top brands for you</h1>
+          <TopBrandSlider />
+        </div>
       </Content>
       <Content
         style={{
           padding: "0px 0px 40px 0px",
+          margin: "0 400px",
         }}
       >
         <h1 style={{ marginBottom: "32px" }}>

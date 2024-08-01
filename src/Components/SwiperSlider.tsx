@@ -13,9 +13,9 @@ const SwiperSlider = (data: any) => {
       // onSwiper={(swiper: any) => console.log(swiper)}
     >
       {item &&
-        item.map((item: any) => {
+        item.map((item: any, index: number) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={index}>
               <div
                 style={{
                   display: "flex",
