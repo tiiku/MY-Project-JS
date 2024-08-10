@@ -35,7 +35,7 @@ const RestaurantsCards = () => {
           gap: "25px",
         }}
       >
-        {dummyMap.map((item) => (
+        {dummyMap.map(() => (
           <>
             <Card
               hoverable

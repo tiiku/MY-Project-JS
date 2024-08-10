@@ -1,41 +1,9 @@
 import { Header } from "antd/es/layout/layout";
-import { Breadcrumb, Button, Dropdown, MenuProps, Space } from "antd";
+import { Breadcrumb, Button, Divider, Select, Space } from "antd";
 import MainContainer from "./Components/MainContainer";
 import LocationIcon from "./Components/LocationIcon";
-import { CaretDownOutlined } from "@ant-design/icons";
+import SearchIcon from "./Components/SearchIcon";
 
-const items: MenuProps["items"] = [
-  {
-    key: "1",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
-        1st menu item
-      </a>
-    ),
-  },
-  {
-    key: "3",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
-        3rd menu item (disabled)
-      </a>
-    ),
-    disabled: true,
-  },
-  {
-    key: "4",
-    danger: true,
-    label: "a danger item",
-  },
-];
 function App() {
   return (
     <div className="App">
@@ -59,22 +27,53 @@ function App() {
             style={{
               display: "flex",
               alignItems: "center",
-              marginLeft: "15px",
+              marginTop: 7,
+              marginLeft: "25px",
               borderRadius: "8px",
-              width: "640px",
-              height: "48px",
+              width: "704px",
+              height: "52px",
               boxShadow: " 0 0 5px lightgray",
             }}
           >
-            <LocationIcon />
-            <Dropdown menu={{ items }}>
-              <a href="/#" onClick={(e) => e.preventDefault()}>
-                <Space>
-                  Hover me
-                  <CaretDownOutlined />
-                </Space>
-              </a>
-            </Dropdown>
+            <LocationIcon style={{ marginLeft: "10px" }} />
+            <Select
+              style={{ width: 222, fontSize: "medium" }}
+              variant={"borderless"}
+              placeholder="vesu surat"
+              filterOption={true}
+              dropdownRender={() => (
+                <>
+                  <Divider style={{ margin: "8px 0" }} />
+                  <Space style={{ padding: "0 8px 4px" }}>
+                    <h3 style={{ fontWeight: -100 }}>Recent Locations</h3>
+                  </Space>
+                </>
+              )}
+            />
+            <Divider
+              type="vertical"
+              style={{
+                borderWidth: 2,
+                borderColor: "#CFCFCF",
+                height: 18,
+                margin: 0,
+              }}
+            />
+            <SearchIcon style={{ margin: "0px 15px" }} />
+            <Select
+              showSearch
+              // value={value}
+              variant={"borderless"}
+              placeholder={"Search for restaurant, cuisine or a dish"}
+              defaultActiveFirstOption={false}
+              suffixIcon={null}
+              filterOption={false}
+              notFoundContent={null}
+              // options={(data || []).map((d) => ({
+              //   value: d.value,
+              //   label: d.text,
+              // }))}
+            />
           </div>
         </div>
 
